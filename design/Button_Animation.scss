@@ -1,0 +1,82 @@
+.projects {  
+    box-shadow: 
+      0.3em 0.3em 0 0 var(--color),
+      inset 0.3em 0.3em 0 0 var(--color);
+    
+    &:hover,
+    &:focus {
+      box-shadow: 
+        0 0 0 0 var(--hover),
+        inset 6em 3.5em 0 0 var(--hover);
+    }
+  }
+
+  .skills {  
+    box-shadow: 
+      0.3em 0.3em 0 0 var(--color),
+      inset 0.3em 0.3em 0 0 var(--color);
+    
+    &:hover,
+    &:focus {
+      box-shadow: 
+        0 0 0 0 var(--hover),
+        inset 6em 3.5em 0 0 var(--hover);
+    }
+  }  
+
+  .achievement {  
+    box-shadow: 
+      0.3em 0.3em 0 0 var(--color),
+      inset 0.3em 0.3em 0 0 var(--color);
+    
+    &:hover,
+    &:focus {
+      box-shadow: 
+        0 0 0 0 var(--hover),
+        inset 6em 3.5em 0 0 var(--hover);
+    }
+  }
+
+  $colors: ( 
+    projects: #d989e9,
+    skills: #fa9aef,
+    achievement: #f5a2d5
+  );
+
+  @each $button, $color in $colors {
+    .#{$button} {
+      --color: #{$color};
+      --hover: #{adjust-hue($color, 45deg)};
+    }
+  }
+
+  .buttons {  
+    color: var(--color);
+    transition: 0.25s;
+    
+    &:hover,
+    &:focus { 
+      border-color: var(--hover);
+      color: #fff;
+    }
+  }
+
+  button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em 3em;
+    padding: 1em 2em;
+  }
+
+  @media (max-width: 500px) and (min-width: 0px){
+    button{
+      background: none;
+      border: 2px solid;
+      font: inherit;
+      line-height: 1;
+      margin: 0.1em;
+      padding: 1em 2em;
+    }
+  }

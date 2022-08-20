@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Silkscreen&display=swap');
+
+.height{
+    height: 4.5rem;
+}
+
+.marginTop{
+    margin-top: 1.225rem;
+}
+
+.bg_color{
+    background-image: linear-gradient(to bottom right,rgb(196 181 253),rgb(245 243 255));
+}
+
+.text_size{
+    display: flex;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+@media (max-width:490px) and (min-width:0px){
+    .text_size{
+        display: flex;
+        font-family: 'Inconsolata', monospace;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+    }
+
+    .margin_correct{
+        margin-left: -60px;
+        margin-right: -50px;
+        margin-top: 9px;
+        margin-bottom: 7px;
+    }
+}
+
+@media (max-width:1000px) and (min-width:491px){
+    .text_size{
+        display: flex;
+        font-family: 'Inconsolata', monospace;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .margin_correct{
+        margin-left: -60px;
+        margin-right: -50px;
+        
+    }
+}

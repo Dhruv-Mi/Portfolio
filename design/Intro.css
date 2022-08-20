@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+.type_write{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: 200;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:800px) and (min-width:600){
+    .type_write{
+        font-family: 'Nanum Gothic Coding', monospace;
+        font-weight: 200;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:600px){
+    .type_write{
+        font-family: 'Nanum Gothic Coding', monospace;
+        font-weight: 200;
+        font-size: 19px;
+        display: flex;
+        justify-content: center;
+    }
+}
+

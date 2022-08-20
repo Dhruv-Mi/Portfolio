@@ -1,0 +1,8 @@
+.grad_top{
+    background-image: linear-gradient(rgb(109 40 217),rgb(224 242 254));
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+}

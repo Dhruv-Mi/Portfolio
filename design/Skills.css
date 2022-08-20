@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Silkscreen&display=swap');
+
+.design{
+    margin: 7px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+}
+
+.design_heading{
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+@media (max-width:490px) and (min-width:0px){
+    .margin_correct{
+        margin-left: -55px;
+        margin-right: -45px;
+    }
+}
